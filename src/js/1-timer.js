@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Получаем элементы
   const input = document.getElementById("datetime-picker");
   const startBtn = document.getElementById("start-btn");
-  const daysEl = document.querySelector("[data-days]");
-  const hoursEl = document.querySelector("[data-hours]");
-  const minutesEl = document.querySelector("[data-minutes]");
-  const secondsEl = document.querySelector("[data-seconds]");
+  const daysEl = document.getElementById("days"); // Изменен на getElementById
+  const hoursEl = document.getElementById("hours"); // Изменен на getElementById
+  const minutesEl = document.getElementById("minutes"); // Изменен на getElementById
+  const secondsEl = document.getElementById("seconds"); // Изменен на getElementById
 
   let userSelectedDate = null;
   let timerInterval = null;
