@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const delay = Number(delayInput.value);
     const state = [...stateRadios].find(radio => radio.checked)?.value;
 
-    // Проверяем, что пользователь выбрал состояние и указал задержку
+    
     if (!state || !delay) {
       return;
     }
 
-    // Создаем промис с задержкой
+    
     const promise = new Promise((resolve, reject) => {
       setTimeout(() => {
         if (state === "fulfilled") {
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }, delay);
     });
 
-    // Обрабатываем результат промиса
+    
     promise
       .then((delay) => {
         iziToast.success({
