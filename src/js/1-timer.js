@@ -4,21 +4,21 @@ import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Получаем элементы
+ 
   const input = document.getElementById("datetime-picker");
   const startBtn = document.getElementById("start-btn");
-  const daysEl = document.getElementById("days"); // Изменен на getElementById
-  const hoursEl = document.getElementById("hours"); // Изменен на getElementById
-  const minutesEl = document.getElementById("minutes"); // Изменен на getElementById
-  const secondsEl = document.getElementById("seconds"); // Изменен на getElementById
+  const daysEl = document.getElementById("days"); 
+  const hoursEl = document.getElementById("hours"); 
+  const minutesEl = document.getElementById("minutes"); 
+  const secondsEl = document.getElementById("seconds"); 
 
   let userSelectedDate = null;
   let timerInterval = null;
 
-  // Ожидаем правильную дату для старта
+  
   startBtn.disabled = true;
 
-  // Инициализируем Flatpickr
+  
   const options = {
     enableTime: true,
     time_24hr: true,
@@ -38,30 +38,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   flatpickr(input, options);
 
-  // Обработчик для кнопки Start
+  
   startBtn.addEventListener("click", () => {
-    startBtn.disabled = true;  // Блокируем кнопку после старта
-    input.disabled = true;     // Блокируем input
+    startBtn.disabled = true;  
+    input.disabled = true;     
 
-    // Запускаем таймер
+   
     timerInterval = setInterval(() => {
       const currentTime = new Date();
       const timeLeft = userSelectedDate - currentTime;
 
-      // Если время вышло, останавливаем таймер
+     
       if (timeLeft <= 0) {
         clearInterval(timerInterval);
         updateTimerDisplay(0, 0, 0, 0);
-        input.disabled = false;  // Разблокируем input
+        input.disabled = false;  
         return;
       }
 
       const { days, hours, minutes, seconds } = convertMs(timeLeft);
       updateTimerDisplay(days, hours, minutes, seconds);
-    }, 1000); // Каждую секунду обновляем
+    }, 1000); 
   });
 
-  // Функция для преобразования миллисекунд в дни, часы, минуты и секунды
   function convertMs(ms) {
     const second = 1000;
     const minute = second * 60;
@@ -76,12 +75,12 @@ document.addEventListener("DOMContentLoaded", () => {
     return { days, hours, minutes, seconds };
   }
 
-  // Функция для добавления ведущего нуля к числу
+  
   function addLeadingZero(value) {
     return String(value).padStart(2, "0");
   }
 
-  // Функция для обновления интерфейса таймера
+ 
   function updateTimerDisplay(days, hours, minutes, seconds) {
     daysEl.textContent = addLeadingZero(days);
     hoursEl.textContent = addLeadingZero(hours);
@@ -89,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
     secondsEl.textContent = addLeadingZero(seconds);
   }
 });
-// Добавляем стили через JavaScript
+
 const style = document.createElement("style");
 style.textContent = `
 
