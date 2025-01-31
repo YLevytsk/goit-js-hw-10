@@ -36,6 +36,8 @@ export default defineConfig(({ command }) => {
       },
       outDir: '../dist',
       emptyOutDir: true,
+      // Указываем базовый путь для деплоя на GitHub Pages
+      base: '/goit-js-hw-10/',  // Замените на имя вашего репозитория
     },
     plugins: [
       injectHTML(),
@@ -46,3 +48,4 @@ export default defineConfig(({ command }) => {
     ],
   };
 });
+
