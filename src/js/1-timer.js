@@ -89,3 +89,28 @@ document.addEventListener("DOMContentLoaded", () => {
     secondsEl.textContent = addLeadingZero(seconds);
   }
 });
+// Добавляем стили через JavaScript
+const style = document.createElement("style");
+style.textContent = `
+  .timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .field {
+    text-align: center;
+  }
+
+  .value {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .label {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+`;
+document.head.appendChild(style);
+
