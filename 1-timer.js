@@ -28,4 +28,4 @@ import"./assets/styles-DD3qoKza.js";import{f as I,i as C}from"./assets/vendor-Bb
     margin-top: 5px;
   }
 `;document.head.appendChild(m);
-//# sourceMappingURL=page-2.js.map
+//# sourceMappingURL=1-timer.js.map
