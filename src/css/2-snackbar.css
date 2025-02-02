@@ -105,6 +105,7 @@ fieldset label {
     align-items: center; /* Выравнивание по вертикали */
     gap: 8px; /* Отступ между радиокнопкой и текстом */
     margin-right: 48px;
+    width: 360px;
      /* Отступ между метками */
   }
   
