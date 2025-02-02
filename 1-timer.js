@@ -1,4 +1,4 @@
-import"./assets/styles-DD3qoKza.js";import{f as I,i as w}from"./assets/vendor-BbbuE1sJ.js";document.addEventListener("DOMContentLoaded",()=>{const i=document.getElementById("datetime-picker"),n=document.getElementById("start-btn"),p=document.getElementById("days"),f=document.getElementById("hours"),g=document.getElementById("minutes"),h=document.getElementById("seconds");let d=null,l=null;n.disabled=!0,I(i,{enableTime:!0,time_24hr:!0,defaultDate:new Date,minuteIncrement:1,onClose(e){const t=e[0];t<=new Date?(w.error({message:"Please choose a date in the future"}),n.disabled=!0):(d=t,n.disabled=!1)}}),n.addEventListener("click",()=>{n.disabled=!0,i.disabled=!0,l=setInterval(()=>{const t=d-new Date;if(t<=0){clearInterval(l),c(0,0,0,0),i.disabled=!1;return}const{days:r,hours:a,minutes:u,seconds:s}=x(t);c(r,a,u,s)},1e3)});function x(e){const s=Math.floor(e/864e5),y=Math.floor(e%864e5/36e5),b=Math.floor(e%864e5%36e5/6e4),E=Math.floor(e%864e5%36e5%6e4/1e3);return{days:s,hours:y,minutes:b,seconds:E}}function o(e){return String(e).padStart(2,"0")}function c(e,t,r,a){p.textContent=o(e),f.textContent=o(t),g.textContent=o(r),h.textContent=o(a)}});const m=document.createElement("style");m.textContent=`
+import"./assets/styles-DD3qoKza.js";import{f as w,i as I}from"./assets/vendor-BbbuE1sJ.js";document.addEventListener("DOMContentLoaded",()=>{const a=document.getElementById("datetime-picker"),n=document.getElementById("start-btn"),p=document.getElementById("days"),f=document.getElementById("hours"),g=document.getElementById("minutes"),x=document.getElementById("seconds");let d=null,l=null;n.disabled=!0,w(a,{enableTime:!0,time_24hr:!0,defaultDate:new Date,minuteIncrement:1,onClose(e){const t=e[0];t<=new Date?(I.error({message:"Please choose a date in the future"}),n.disabled=!0):(d=t,n.disabled=!1)}}),n.addEventListener("click",()=>{n.disabled=!0,a.disabled=!0,l=setInterval(()=>{const t=d-new Date;if(t<=0){clearInterval(l),c(0,0,0,0),a.disabled=!1;return}const{days:r,hours:i,minutes:u,seconds:s}=h(t);c(r,i,u,s)},1e3)});function h(e){const s=Math.floor(e/864e5),y=Math.floor(e%864e5/36e5),b=Math.floor(e%864e5%36e5/6e4),E=Math.floor(e%864e5%36e5%6e4/1e3);return{days:s,hours:y,minutes:b,seconds:E}}function o(e){return String(e).padStart(2,"0")}function c(e,t,r,i){p.textContent=o(e),f.textContent=o(t),g.textContent=o(r),x.textContent=o(i)}});const m=document.createElement("style");m.textContent=`
 
 .timer-container {
   display: flex;
@@ -17,8 +17,16 @@ import"./assets/styles-DD3qoKza.js";import{f as I,i as w}from"./assets/vendor-Bb
   display: block;
   margin: 0 auto;
   text-align: center;
+  margin: 36px auto 16px;
+  text-align: center;
+  border-radius: 4px;
+  width: 280px;
+  height: 40px;
 }
 
+input[type="date"] {
+  margin-right: 10px; 
+}
 #start-btn {
   white-space: nowrap;
 }
@@ -62,6 +70,7 @@ import"./assets/styles-DD3qoKza.js";import{f as I,i as w}from"./assets/vendor-Bb
   border: none;
   background-color: transparent;
   cursor: pointer;
+  background: #cfcfcf;
 }
 
 
