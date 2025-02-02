@@ -40,7 +40,7 @@
 
 
  /* Стили для поля Delay */
-input[name="delay"] {
+ .delay-input {
     font-family: var(--font-family); /* Шрифт */
     font-weight: 400; /* Толщина шрифта */
     font-size: 16px; /* Размер шрифта */
@@ -49,14 +49,17 @@ input[name="delay"] {
     color: #2E2F42; /* Цвет текста */
     border: 1px solid #808080; /* Цвет рамки */
     border-radius: 4px;
-    width: 360px; /* Скругленные углы */
+    width: 360px; /* Ширина поля */
+     /* Высота поля */
   }
-  label {
+  
+  .delay-label {
     display: flex; /* Для вертикального выравнивания используем flex */
     flex-direction: column; /* Располагаем элементы внутри label вертикально */
-    gap: 8px;
-    align-items: flex-start;/* Задаем отступ между текстом и полем ввода */
+    gap: 8px; /* Отступ между текстом и полем ввода */
+    align-items: flex-start; /* Текст выравнивается слева */
   }
+  
   /* Стили для поля при ховере */
   input[name="delay"]:hover {
     border-color: #4e75ff; /* Изменение цвета рамки при наведении */
@@ -117,7 +120,14 @@ input[name="delay"] {
     font-size: 16px;
     font-weight: 400;
     color: #2e2f42;
-    margin-right: 8px; /* Отступ между надписью и следующей кнопкой */
+    margin-right: 8px;
+    align-items: center;  /* Отступ между надписью и следующей кнопкой */
   }
   
-  
+  .state-fieldset {
+    border: 1px solid #808080; /* Цвет рамки */
+    border-radius: 4px; /* Скругленные углы */
+    width: 360px; /* Ширина */
+    padding: 16px; /* Отступы внутри fieldset */
+    margin-bottom: 16px; /* Отступ снизу */
+  }
