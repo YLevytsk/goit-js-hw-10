@@ -141,7 +141,7 @@ button {
   color: white; /* Цвет текста */
   border-radius: 8px; /* Скругленные углы */
   padding: 8px 16px; /* Отступы внутри кнопки */
-  width: 360px; /* Ширина кнопки */
+  width: 366px; /* Ширина кнопки */
   height: 40px; /* Высота кнопки */
   border: none; /* Убираем рамку */
   font-size: 16px; /* Размер шрифта */
