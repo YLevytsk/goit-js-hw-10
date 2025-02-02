@@ -94,24 +94,30 @@ input[name="delay"] {
     gap: 20px;
     margin-top: 50px;
   }
-  /* Стили для label внутри fieldset */
-fieldset label {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px; /* Устанавливаем нужный размер шрифта */
-    line-height: 150%;
-    letter-spacing: 0.04em;
-    color: #2e2f42;
-    display: inline-flex; /* Располагаем элементы в одну строку */
-    align-items: center; /* Выравнивание по вертикали */
-    gap: 8px; /* Отступ между радиокнопкой и текстом */
-    margin-right: 48px;
-    width: 360px;
-     /* Отступ между метками */
+/* Контейнер для радиокнопок и надписей */
+/* Контейнер для радиокнопок и надписей */
+.radio-container {
+    display: flex; /* Элементы внутри контейнера будут располагаться в строку */
+    align-items: center; /* Выравнивание элементов по вертикали */
+    justify-content: center; /* Выравнивание элементов по горизонтали */
+    gap: 48px; /* Отступ между кнопками */
+    width: 264px;
+    height: 32px;
+    white-space: nowrap;
+    flex-direction: row; /* Запрещает перенос элементов на новую строку */
   }
   
-  /* Радиокнопки */
-  fieldset input[type="radio"] {
-    margin-right: 8px; /* Отступ между радиокнопкой и текстом */
+  /* Стили для радиокнопок */
+  .radio-container input[type="radio"] {
+    margin-right: 8px; /* Отступ между кнопкой и надписью */
   }
- 
+  
+  /* Стили для надписей */
+  .radio-container label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2e2f42;
+    margin-right: 8px; /* Отступ между надписью и следующей кнопкой */
+  }
+  
+  
