@@ -92,33 +92,42 @@ document.addEventListener("DOMContentLoaded", () => {
 const style = document.createElement("style");
 style.textContent = `
 
-  #datetime-picker {
-    margin-bottom: 36px; 
-  }
-  .timer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
+ #datetime-picker {
+  display: block;
+  margin: 0 auto 36px;
+  text-align: center;
+}
 
-  .field {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .value {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1.2;
-    mardin-top: 24px;
-  }
+.timer {
+  display: flex;
+  gap: 20px;
+}
 
-  .label {
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-top: 5px;
-  }
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 24px;
+}
+
+.label {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
 `;
 document.head.appendChild(style);
 
