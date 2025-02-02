@@ -10,17 +10,17 @@
     display: flex; 
     align-items: center; 
     gap: 8px;
-    flex-direction: row; 
+   
   }
   
   /* Стиль для поля выбора даты */
   #datetime-picker {
     display: block;
-    margin: 36px auto 16px;
     text-align: left;
     border-radius: 4px;
     width: 280px;
     height: 40px;
+    align-items: center; 
   }
   
   /* Стиль для кнопки */
@@ -41,6 +41,7 @@
     border: none;
     background-color: #4e75ff;  
     cursor: pointer;
+    vertical-align: middle;
   }
   
   /* Состояние неактивной кнопки */
@@ -87,8 +88,8 @@
   }
   /* Стили для ссылки "Go back" */
 .back-link {
-    text-decoration: none;  /* Убирает стандартное подчеркивание и возможную стрелку */
-    cursor: pointer;  /* Задаёт курсор в виде руки */
+    text-decoration: none; 
+    cursor: pointer; 
   }
   
   
