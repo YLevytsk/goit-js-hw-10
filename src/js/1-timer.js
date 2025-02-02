@@ -109,8 +109,16 @@ style.textContent = `
   display: block;
   margin: 0 auto;
   text-align: center;
+  margin: 36px auto 16px;
+  text-align: center;
+  border-radius: 4px;
+  width: 280px;
+  height: 40px;
 }
 
+input[type="date"] {
+  margin-right: 10px; 
+}
 #start-btn {
   white-space: nowrap;
 }
@@ -154,6 +162,7 @@ style.textContent = `
   border: none;
   background-color: transparent;
   cursor: pointer;
+  background: #cfcfcf;
 }
 
 
