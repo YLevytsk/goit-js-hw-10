@@ -1,0 +1,115 @@
+/* Стили для кнопки Go back */
+.back-link {
+    position: fixed;
+    align-items: flex-start; 
+    left: 168px; 
+    padding: 4px 8px;
+    margin-top: 32px;
+    border: 1px solid;
+    border-radius: 8px;
+    display: inline-block;
+    border: 1px solid #808080; /* Цвет рамки по умолчанию */
+    border-radius: 4px;
+    color: #000000; /* Цвет текста по умолчанию */
+    background-color: white; /* Белый фон */
+    text-decoration: none;
+    cursor: pointer;
+    }
+  
+  /* Стили при ховере */
+  .back-link:hover {
+    border-color: #4e75ff; /* Цвет рамки при ховере */
+    color: #4e75ff; /* Цвет текста при ховере */
+  }
+  
+  /* Стили при фокусе */
+  .back-link:focus {
+    outline: none; /* Убираем стандартное выделение */
+    border-color: #4e75ff; /* Цвет рамки при фокусе */
+    color: #4e75ff; /* Цвет текста при фокусе */
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 100px;
+    align-items: flex-start;
+    position: fixed;
+}
+
+
+ /* Стили для поля Delay */
+input[name="delay"] {
+    font-family: var(--font-family); /* Шрифт */
+    font-weight: 400; /* Толщина шрифта */
+    font-size: 16px; /* Размер шрифта */
+    line-height: 150%; /* Межстрочный интервал */
+    letter-spacing: 0.04em; /* Межбуквенный интервал */
+    color: #2E2F42; /* Цвет текста */
+    border: 1px solid #808080; /* Цвет рамки */
+    border-radius: 4px; /* Скругленные углы */
+  }
+  label {
+    display: flex; /* Для вертикального выравнивания используем flex */
+    flex-direction: column; /* Располагаем элементы внутри label вертикально */
+    gap: 8px;
+    align-items: flex-start;/* Задаем отступ между текстом и полем ввода */
+  }
+  /* Стили для поля при ховере */
+  input[name="delay"]:hover {
+    border-color: #4e75ff; /* Изменение цвета рамки при наведении */
+  }
+  
+  /* Стили для поля в фокусе */
+  input[name="delay"]:focus {
+    border-color: #4e75ff; /* Изменение цвета рамки при фокусе */
+    outline: none; /* Убираем стандартную обводку при фокусе */
+  }
+  
+  /* Стили для кнопки Go back */
+  .back-link {
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute; /* Позиционируем кнопку */
+    top: 20px; /* Расстояние от верхнего края */
+    left: 156px; /* Расстояние от левого края */
+    padding: 4px 8px;
+    margin-top: 32px;
+    border: 1px solid #808080; /* Цвет рамки по умолчанию */
+    border-radius: 8px;
+    color: #000000; /* Цвет текста по умолчанию */
+    background-color: white; /* Белый фон */
+  }
+  
+  .back-link:hover {
+    border-color: #4e75ff; /* Цвет рамки при ховере */
+  }
+  
+  /* Стили для формы */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  /* Стили для label внутри fieldset */
+fieldset label {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px; /* Устанавливаем нужный размер шрифта */
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    display: inline-flex; /* Располагаем элементы в одну строку */
+    align-items: center; /* Выравнивание по вертикали */
+    gap: 8px; /* Отступ между радиокнопкой и текстом */
+    margin-right: 48px;
+     /* Отступ между метками */
+  }
+  
+  /* Радиокнопки */
+  fieldset input[type="radio"] {
+    margin-right: 8px; /* Отступ между радиокнопкой и текстом */
+  }
+ 

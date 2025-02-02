@@ -109,9 +109,8 @@
     /* Кнопка Go back */
 .back-link {
     position: fixed;
-    align-items: flex-start; /* Устанавливаем фиксированное позиционирование */
-     /* Располагаем кнопку в верхнем левом углу экрана */
-    left: 168px; /* Располагаем кнопку на 156 пикселей от левого края экрана */
+    align-items: flex-start; 
+    left: 168px; 
     padding: 4px 8px;
     margin-top: 32px;
     border: 1px solid;
