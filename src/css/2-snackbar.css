@@ -105,9 +105,9 @@
     justify-content: center; /* Выравнивание элементов по горизонтали */
     gap: 48px; /* Отступ между кнопками */
     width: 264px;
-    height: 32px;
     white-space: nowrap;
-    flex-direction: row; /* Запрещает перенос элементов на новую строку */
+    flex-direction: row;
+    margin: 0 auto; /* Запрещает перенос элементов на новую строку */
   }
   
   /* Стили для радиокнопок */
@@ -127,7 +127,12 @@
   .state-fieldset {
     border: 1px solid #808080; /* Цвет рамки */
     border-radius: 4px; /* Скругленные углы */
-    width: 360px; /* Ширина */
+    width: 330px; /* Ширина */
     padding: 16px; /* Отступы внутри fieldset */
     margin-bottom: 16px; /* Отступ снизу */
   }
+  .state-fieldset legend {
+    text-align: left; /* Выравнивание текста по левому краю */
+    /* Отступ от левого края рамки */
+  }
+  

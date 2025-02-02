@@ -135,4 +135,23 @@
     border: 1px solid #4e75ff; /* Цвет рамки при фокусе */
     outline: none; /* Убираем стандартную обводку */
   }
+  /* Стили для кнопки в нормальном состоянии */
+button {
+  background: #4e75ff; /* Цвет фона */
+  color: white; /* Цвет текста */
+  border-radius: 8px; /* Скругленные углы */
+  padding: 8px 16px; /* Отступы внутри кнопки */
+  width: 360px; /* Ширина кнопки */
+  height: 40px; /* Высота кнопки */
+  border: none; /* Убираем рамку */
+  font-size: 16px; /* Размер шрифта */
+  cursor: pointer; /* Курсор при наведении */
+  transition: background 0.3s ease; /* Плавное изменение фона */
+}
+
+/* Стили для кнопки при ховере */
+button:hover {
+  background: #6c8cff; /* Цвет фона при ховере */
+}
+
   
