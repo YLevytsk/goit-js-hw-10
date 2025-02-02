@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    top: 100px;
+    align-items: flex-start;
+    position: fixed;
   }
   
   /* Контейнер для поля ввода даты */
@@ -16,11 +19,23 @@
   /* Стиль для поля выбора даты */
   #datetime-picker {
     display: block;
+    border: 1px solid #808080;
     text-align: left;
     border-radius: 4px;
     width: 280px;
     height: 40px;
-    align-items: center; 
+    align-items: center;
+    padding-left: 16px;
+  }
+  /* Ховер-состояние */
+#datetime-picker:hover {
+    border: 1px solid #2e2f42; /* Рамка при ховере */
+  }
+  
+  /* Активное состояние */
+  #datetime-picker:focus {
+    border: 1px solid #4e75ff; /* Рамка при фокусе */
+    outline: none; /* Убираем стандартную обводку */
   }
   
   /* Стиль для кнопки */
@@ -90,6 +105,35 @@
 .back-link {
     text-decoration: none; 
     cursor: pointer; 
+}
+    /* Кнопка Go back */
+.back-link {
+    position: fixed;
+    align-items: flex-start; /* Устанавливаем фиксированное позиционирование */
+     /* Располагаем кнопку в верхнем левом углу экрана */
+    left: 168px; /* Располагаем кнопку на 156 пикселей от левого края экрана */
+    padding: 4px 8px;
+    margin-top: 32px;
+    border: 1px solid;
+    border-radius: 8px;
+    display: inline-block;
+    border: 1px solid #808080; /* Цвет рамки по умолчанию */
+    border-radius: 8px;
+    color: #000000; /* Цвет текста по умолчанию */
+    background-color: white; /* Белый фон */
+    text-decoration: none;
+    cursor: pointer;
+    }
+  /* Ховер-состояние для кнопки */
+.back-link:hover {
+    color: #4e75ff; /* Цвет текста при ховере */
+    border: 1px solid #4e75ff; /* Цвет рамки при ховере */
   }
   
+  /* Фокус-состояние для кнопки */
+  .back-link:focus {
+    color: #4e75ff; /* Цвет текста при фокусе */
+    border: 1px solid #4e75ff; /* Цвет рамки при фокусе */
+    outline: none; /* Убираем стандартную обводку */
+  }
   
