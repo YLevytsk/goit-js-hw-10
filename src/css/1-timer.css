@@ -3,16 +3,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 36px;
-  
   }
   
   /* Контейнер для поля ввода даты */
   .datetime-wrapper {
-    display: flex; /* Размещаем элементы в строку */
-    align-items: center; /* Вертикальное выравнивание по центру */
+    display: flex; 
+    align-items: center; 
     gap: 8px;
-    flex-direction: row; /* Отступ 8px между элементами */
+    flex-direction: row; 
   }
   
   /* Стиль для поля выбора даты */
