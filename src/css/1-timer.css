@@ -86,4 +86,10 @@
     text-transform: uppercase;
     margin-top: 5px;
   }
+  /* Стили для ссылки "Go back" */
+.back-link {
+    text-decoration: none;  /* Убирает стандартное подчеркивание и возможную стрелку */
+    cursor: pointer;  /* Задаёт курсор в виде руки */
+  }
+  
   
