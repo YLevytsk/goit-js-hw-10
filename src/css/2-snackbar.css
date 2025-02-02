@@ -48,7 +48,8 @@ input[name="delay"] {
     letter-spacing: 0.04em; /* Межбуквенный интервал */
     color: #2E2F42; /* Цвет текста */
     border: 1px solid #808080; /* Цвет рамки */
-    border-radius: 4px; /* Скругленные углы */
+    border-radius: 4px;
+    width: 360px; /* Скругленные углы */
   }
   label {
     display: flex; /* Для вертикального выравнивания используем flex */
